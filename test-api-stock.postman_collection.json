@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "01753992-0816-416e-9468-ec2732de04a4",
+		"name": "test-api-stock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stocks/:symbol",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "test api for fetch data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
