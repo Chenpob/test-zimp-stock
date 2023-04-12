@@ -4,7 +4,7 @@ const fetch = require('isomorphic-fetch')
 
 router.get('/:symbol', async (req, res) => {
   const symbol = req.params.symbol.toLowerCase();
-  const modules = req.query.modules.toLocaleLowerCase();
+  const modules = 'financialData';
   const response = await fetch(`https://query1.finance.yahoo.com/v10/finance/quoteSummary/${symbol}?modules=${modules}`);
   const text = await response.text();
   const match = text.match(/"currentPrice":{"raw":(\d+\.\d+),"fmt":"(\d+\.\d+)"/);
